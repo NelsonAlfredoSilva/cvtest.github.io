@@ -19,10 +19,12 @@ function MostrarElementosHiden() {
     }
 }
 function AnclarElemento() {
-    if(window.pageYOffset > posicion ) {
-        menu.classList.add("anclar");
-    } else {
-        menu.classList.remove("anclar");
+    if(window.innerWidth >= 1024 ) {
+        if(window.pageYOffset > posicion ) {
+            menu.classList.add("anclar");
+        } else {
+            menu.classList.remove("anclar");
+        }
     }
 }
 
