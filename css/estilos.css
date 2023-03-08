@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.encabezado {
+    background-color: #6C7777;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.encabezado h1 {
+    width: 100%;
+    text-align: center;
+    margin: 10px;
+    border-bottom: 2px solid;
+}
+.encabezado img {
+    padding: 5px;
+    margin: 5px;
+    max-width: 200px;
+    border-radius: 10%;
+}
+
+#titular {
+    padding: 15px;
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    margin: auto;
+}
+.accesosdirectos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #6C7777;
+}
+.item-menu {
+    width: 100%;
+    padding: 10px;
+    border-bottom: 1px solid white;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.item-menu:hover {
+    background-color: grey;
+}
+/*
+ sombreado de los items
+*/
+
+#secciones {
+    margin: auto;
+}
+
+#secciones h1 {
+    text-align: center;
+    padding-top: 20px;
+}
+
+#secciones p {
+    padding: 10px;
+    text-align: justify;
+}
+
+#secciones li {
+    padding: 10px;
+}
+
+/* Tablas */
+table {
+    padding: 10px;
+    width: 100%;
+}
+th {
+    background-color:rgb(76, 72, 31);
+    text-align: center;
+    padding: 10px;
+    color: white;
+}
+td {
+    padding: 10px;
+}
+
+footer {
+    background-color: beige;
+    text-align: center;
+}
+footer i {
+    border: 1px solid;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 10px;
+    padding: 5px;
+    font-size: 24px;
+}
+
+.animacion {
+    opacity: 0;
+    transition: 0.5s;
+}
+/* Anclaje de un elemento */
+.anclar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+/* Efecto de animación */
+.efectoArriba {
+    animation: efectoArriba 1s;
+}
+
+/* Keyframe para ejecutar el efecto */
+@keyframes efectoArriba {
+    0% {
+        transform: translateY(60px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Media Query 1024*/
+@media screen and (min-width: 1024px) {
+    .encabezado {
+        display: block;
+        text-align: center;
+    }
+    .encabezado img {
+        max-width: 300px;
+    }
+    .item-menu {
+        width: 20%;
+    }
+    #secciones {
+        max-width: 1000px;        
+    }
+}
